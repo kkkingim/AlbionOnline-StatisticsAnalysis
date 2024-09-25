@@ -120,6 +120,7 @@ public static class GameData
             }
 
             fileNamesToLoad.Add("loot");
+            fileNamesToLoad.Add("quests");
 
 
             taskFactories.Add(() => extractor.ExtractGameDataAsync(tempDirPath, fileNamesToLoad.ToArray()));
