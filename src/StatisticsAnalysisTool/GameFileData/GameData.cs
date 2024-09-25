@@ -119,6 +119,8 @@ public static class GameData
                 fileNamesToLoad.Add("mists");
             }
 
+            fileNamesToLoad.Add("loot");
+
 
             taskFactories.Add(() => extractor.ExtractGameDataAsync(tempDirPath, fileNamesToLoad.ToArray()));
             taskFactories.Add(ItemController.LoadIndexedItemsDataAsync);
